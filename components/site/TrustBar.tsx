@@ -12,9 +12,9 @@ export default function TrustBar() {
         {trustItems.map((item) => (
           <div
             key={item.label}
-            className="flex flex-col items-start gap-0.5 text-[10px] tracking-[0.15em] uppercase text-brand-muted sm:flex-row sm:items-center sm:gap-2.5 sm:text-[13px] sm:tracking-[0.18em]"
+            className="flex flex-col items-start gap-0.5 text-[12px] tracking-[0.12em] uppercase text-brand-muted sm:flex-row sm:items-center sm:gap-2.5 sm:text-[13px] sm:tracking-[0.18em]"
           >
-            <span className="font-serif text-[16px] text-brand-green sm:text-[22px]">
+            <span className="font-serif text-[22px] text-brand-green sm:text-[36px]">
               {item.value}
             </span>
             <span>{item.label}</span>
