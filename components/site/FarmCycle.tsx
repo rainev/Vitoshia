@@ -20,7 +20,7 @@ const cycleSteps: CycleStep[] = [
 
 export default function FarmCycle() {
   return (
-    <section className="w-full bg-brand-paper pt-6 pb-12 sm:pt-8 sm:pb-16 lg:pt-10 lg:pb-20">
+    <section className="w-full bg-brand-paper pt-6 pb-12 sm:pt-8 sm:pb-16 lg:hidden">
       <div className="w-full px-5 sm:px-8 lg:px-16">
         <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-orange sm:text-[12px] sm:tracking-[0.3em]">
           The Farm Cycle
