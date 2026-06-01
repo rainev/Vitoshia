@@ -24,13 +24,13 @@ export default function Hero() {
       <div className="mx-auto w-full max-w-[1500px] px-5 pt-24 pb-8 sm:px-8 sm:pt-32 sm:pb-14 lg:px-16">
         <div className="max-w-[820px]">
         <p className="mb-2.5 text-[12px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:mb-3 sm:text-[13px] sm:tracking-[0.4em] lg:text-[14px]">
-          Tech-Driven Agri Solutions · Philippines
+          Your Partner for Farming Success · Philippines
         </p>
         <h1 className="font-serif font-bold leading-[1.1] text-[34px] sm:text-[48px] sm:leading-[1.05] md:text-[56px] lg:text-[60px]">
-          Modern farming services, from soil prep to harvest.
+          The full farm cycle, handled.
         </h1>
         <p className="mt-3 max-w-[600px] text-[15px] leading-[1.55] text-[#e8efe5] sm:mt-5 sm:text-[17px] sm:leading-[1.55]">
-          Modern equipment and trained operators, so you can focus on growing.
+          Modern equipment, trained operators, and end-to-end farming support you can rely on.
         </p>
 
         <div className="mt-4 flex flex-wrap gap-2.5 sm:mt-6 sm:gap-3">
