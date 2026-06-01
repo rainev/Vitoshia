@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Playfair_Display } from "next/font/google";
+import FloatingContact from "@/components/site/FloatingContact";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -35,6 +36,7 @@ export default function RootLayout({
         className="min-h-full flex flex-col font-sans bg-brand-paper text-brand-ink"
       >
         {children}
+        <FloatingContact />
       </body>
     </html>
   );

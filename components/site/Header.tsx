@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MobileNav from "@/components/site/MobileNav";
+import { CONTACT, telHref } from "@/lib/contact";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -40,13 +42,22 @@ export default function Header() {
           </ul>
         </nav>
 
-        {/* Desktop CTA — hidden on mobile, MobileNav takes over there */}
-        <Button
-          asChild
-          className="hidden h-10 rounded-md bg-brand-orange px-5 text-sm font-bold tracking-[0.13em] uppercase text-white hover:bg-brand-orange-deep md:inline-flex"
-        >
-          <Link href="/contact">Get a Quote</Link>
-        </Button>
+        {/* Desktop CTA cluster — hidden on mobile, MobileNav takes over there */}
+        <div className="hidden items-center gap-4 md:flex lg:gap-5">
+          <a
+            href={telHref}
+            className="inline-flex items-center gap-2 text-[13px] font-semibold tracking-[0.08em] text-white/90 transition-colors hover:text-brand-yellow"
+          >
+            <Phone className="h-4 w-4" aria-hidden />
+            {CONTACT.phoneDisplay}
+          </a>
+          <Button
+            asChild
+            className="h-10 rounded-md bg-brand-orange px-5 text-sm font-bold tracking-[0.13em] uppercase text-white hover:bg-brand-orange-deep"
+          >
+            <Link href="/contact">Get a Quote</Link>
+          </Button>
+        </div>
 
         <MobileNav links={navLinks} />
       </div>

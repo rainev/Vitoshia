@@ -1,8 +1,9 @@
+// PLACEHOLDER region value — swap with real service coverage before launch.
 const trustItems = [
   { value: "20+", label: "Years in the Field" },
   { value: "100%", label: "Filipino-Owned" },
   { value: "Drone", label: "Precision Spraying" },
-  { value: "Local + Global", label: "Clients" },
+  { value: "Luzon + Visayas", label: "Service Coverage" },
 ];
 
 export default function TrustBar() {
