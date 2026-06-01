@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import { Drone, Droplets, Map, Sprout, Sun, Tractor, Truck, Wheat } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -19,34 +22,91 @@ const cycleSteps: CycleStep[] = [
 ];
 
 export default function FarmCycle() {
-  return (
-    <section className="w-full bg-brand-paper pt-6 pb-12 sm:pt-8 sm:pb-16 lg:hidden">
-      <div className="w-full px-5 sm:px-8 lg:px-16">
-        <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-orange sm:text-[12px] sm:tracking-[0.3em]">
-          The Farm Cycle
-        </p>
-        <p className="mt-2 text-[12px] text-brand-muted sm:text-[13px]">
-          Tap an icon to jump to its service.
-        </p>
+  const [activeSlug, setActiveSlug] = useState<string | null>(null);
+  const stripRef = useRef<HTMLOListElement>(null);
+  const itemRefs = useRef<Record<string, HTMLLIElement | null>>({});
 
-        <ol className="mt-6 grid grid-cols-2 gap-3 sm:mt-8 sm:grid-cols-4 sm:gap-4 lg:grid-cols-8 lg:gap-5">
+  useEffect(() => {
+    const targets = cycleSteps
+      .map((step) => document.getElementById(`service-${step.slug}`))
+      .filter((el): el is HTMLElement => el !== null);
+
+    if (targets.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const intersecting = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (intersecting.length > 0) {
+          const id = intersecting[0].target.id;
+          setActiveSlug(id.replace("service-", ""));
+        }
+      },
+      {
+        rootMargin: "-35% 0px -45% 0px",
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+      },
+    );
+
+    targets.forEach((t) => observer.observe(t));
+    return () => observer.disconnect();
+  }, []);
+
+  // Keep the active pill centered in the mobile horizontal strip.
+  useEffect(() => {
+    if (!activeSlug) return;
+    const el = itemRefs.current[activeSlug];
+    const strip = stripRef.current;
+    if (!el || !strip) return;
+    if (strip.scrollWidth <= strip.clientWidth) return;
+    const elRect = el.getBoundingClientRect();
+    const stripRect = strip.getBoundingClientRect();
+    const offset = elRect.left - stripRect.left - (stripRect.width - elRect.width) / 2;
+    strip.scrollBy({ left: offset, behavior: "smooth" });
+  }, [activeSlug]);
+
+  return (
+    <section className="sticky top-0 z-20 w-full border-b border-brand-green/10 bg-brand-paper/95 backdrop-blur lg:py-5">
+      <div className="mx-auto w-full max-w-[1500px] px-3 py-2 sm:px-8 lg:px-16 lg:py-0">
+        <ol
+          ref={stripRef}
+          className="flex gap-2 overflow-x-auto scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:grid lg:grid-cols-8 lg:gap-2 lg:overflow-visible"
+        >
           {cycleSteps.map((step, i) => {
             const { Icon } = step;
+            const isActive = activeSlug === step.slug;
             return (
-              <li key={step.slug}>
+              <li
+                key={step.slug}
+                ref={(node) => {
+                  itemRefs.current[step.slug] = node;
+                }}
+                className="shrink-0 lg:shrink"
+              >
                 <a
                   href={`#service-${step.slug}`}
-                  className="group flex cursor-pointer flex-col items-center gap-2 rounded-lg border border-brand-green/15 bg-white px-2 py-4 text-center transition-colors hover:border-brand-green/40 hover:bg-brand-green/5"
+                  className={`group flex cursor-pointer items-center gap-1.5 rounded-full border px-3 py-1.5 transition-colors lg:flex-col lg:gap-1 lg:rounded-lg lg:px-1 lg:py-2 ${
+                    isActive
+                      ? "border-brand-orange bg-brand-orange/5"
+                      : "border-brand-green/15 bg-white hover:border-brand-green/40 hover:bg-brand-green/5"
+                  }`}
                 >
-                  <span className="text-[10px] font-semibold tracking-[0.18em] text-brand-orange">
+                  <span className="hidden text-[9px] font-semibold tracking-[0.18em] text-brand-orange lg:block">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <Icon
-                    className="h-7 w-7 text-brand-green-dark transition-transform group-hover:scale-110 sm:h-8 sm:w-8"
+                    className={`h-4 w-4 transition-transform group-hover:scale-110 lg:h-6 lg:w-6 ${
+                      isActive ? "text-brand-orange" : "text-brand-green-dark"
+                    }`}
                     strokeWidth={1.5}
                     aria-hidden
                   />
-                  <h4 className="font-sans text-[11px] font-semibold tracking-[0.06em] uppercase text-brand-green-dark sm:text-[12px]">
+                  <h4
+                    className={`font-sans text-[11px] font-semibold tracking-[0.06em] uppercase lg:text-[10px] ${
+                      isActive ? "text-brand-orange" : "text-brand-green-dark"
+                    }`}
+                  >
                     {step.label}
                   </h4>
                 </a>
