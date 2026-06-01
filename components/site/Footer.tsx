@@ -31,8 +31,8 @@ export default function Footer() {
             </span>
           </Link>
           <p className="mt-4 max-w-[420px] text-[13px] leading-[1.6] text-white/70 sm:text-[14px]">
-            Modern farming services — land surveying, drone application, solar irrigation,
-            harvesting, hauling, and drying — delivered by a Filipino team serving local and
+            Modern farming services: land surveying, drone application, solar irrigation,
+            harvesting, hauling, and drying. Delivered by a Filipino team serving local and
             international clients.
           </p>
         </div>

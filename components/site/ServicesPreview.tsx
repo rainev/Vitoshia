@@ -6,49 +6,49 @@ const services = [
   {
     slug: "surveying",
     name: "Land Surveying",
-    description: "Accurate measurement and mapping for planning, titling, and pre-planting layout.",
+    description: "Accurate mapping for planning, titling, and layout.",
     image: "/images/photo-surveying.png",
   },
   {
     slug: "preparation",
     name: "Land Preparation",
-    description: "Plowing, harrowing, and bed-shaping with our fleet of tractors and implements.",
+    description: "Plowing, harrowing, and bed-shaping with our tractor fleet.",
     image: "/images/photo-09.png",
   },
   {
     slug: "planning",
     name: "Crop Planning",
-    description: "Season-by-season planning aligned with soil type, water access, and market timing.",
+    description: "Season planning around soil, water, and market timing.",
     image: "/images/photo-02.png",
   },
   {
     slug: "drone",
     name: "Drone Spraying",
-    description: "Precision fertilizer & pesticide application — faster coverage, less waste, safer for workers.",
+    description: "Precision fertilizer and pesticide spraying. Faster, safer, less waste.",
     image: "/images/photo-06.png",
   },
   {
     slug: "solar-water",
     name: "Solar Water Systems",
-    description: "Off-grid irrigation powered by the sun — lower diesel costs, reliable water year-round.",
+    description: "Sun-powered irrigation. Lower diesel, reliable water year-round.",
     image: "/images/photo-solar-water.png",
   },
   {
     slug: "harvesting",
     name: "Harvesting",
-    description: "Combine harvester services for rice and corn with trained operators and field support.",
+    description: "Combine harvesting for rice and corn, with trained operators.",
     image: "/images/photo-10.png",
   },
   {
     slug: "hauling",
     name: "Hauling",
-    description: "Truck logistics from field to warehouse or buyer — coordinated with your harvest schedule.",
+    description: "Field-to-buyer truck logistics, timed to your harvest.",
     image: "/images/photo-05.png",
   },
   {
     slug: "drying",
     name: "Drying",
-    description: "Post-harvest drying to keep grain quality high and ready for market or storage.",
+    description: "Post-harvest drying. Grain ready for market or storage.",
     image: "/images/photo-drying.png",
   },
 ];
@@ -65,7 +65,7 @@ export default function ServicesPreview() {
             Every step of the farm cycle.
           </h2>
           <p className="mt-4 text-[14px] leading-[1.6] text-brand-muted sm:text-[16px] sm:leading-[1.65]">
-            Modern equipment, trained operators, and end-to-end coordination — from your first
+            Modern equipment, trained operators, and end-to-end coordination, from your first
             call to the dryer. Pick a single service or build a full-season plan.
           </p>
         </div>

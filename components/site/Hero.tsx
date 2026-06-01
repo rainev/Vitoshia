@@ -30,9 +30,7 @@ export default function Hero() {
           Modern farming services, from soil prep to harvest.
         </h1>
         <p className="mt-3 max-w-[600px] text-[15px] leading-[1.55] text-[#e8efe5] sm:mt-5 sm:text-[17px] sm:leading-[1.55]">
-          Land surveying, drone fertilizer &amp; pesticide application, solar water systems,
-          harvesting, hauling, and drying — delivered by a team that knows the land and the
-          technology that moves it forward.
+          Modern equipment and trained operators, so you can focus on growing.
         </p>
 
         <div className="mt-4 flex flex-wrap gap-2.5 sm:mt-6 sm:gap-3">

@@ -23,17 +23,12 @@ export default function StorySection() {
             End-to-end farm support, grounded in 20+ years on the field.
           </h2>
           <p className="mt-4 text-[14px] leading-[1.6] text-brand-muted sm:text-[16px] sm:leading-[1.65]">
-            At Vitoshia Agri PH, we're here to help make farming easier, more efficient, and more profitable.
+            We make farming easier, more efficient, and more profitable.
           </p>
           <p className="mt-3 text-[14px] leading-[1.6] text-brand-muted sm:text-[16px] sm:leading-[1.65]">
-            From land surveying and preparation to crop planning, drone fertilizer and pesticide application, 
-            solar water systems, harvesting, hauling, and drying, we provide the services needed to support your farm from start to finish.
-            With over 20 years of experience through R. Benito Farming Services (RBFS), we combine proven agricultural expertise with modern 
-            technology to help farmers and agri businesses grow with confidence.
-          </p>
-          <p className="mt-3 text-[14px] leading-[1.6] text-brand-muted sm:text-[16px] sm:leading-[1.65]">
-            Instead of coordinating multiple suppliers and service providers, you can rely on one trusted partner 
-            dedicated to helping your operation succeed.
+            Built on 20+ years through R. Benito Farming Services (RBFS), we pair proven
+            agricultural expertise with modern technology. Instead of juggling multiple
+            suppliers, you get one trusted partner from soil prep to harvest.
           </p>
 
           <ul className="mt-6 flex flex-wrap gap-2 sm:mt-7 sm:gap-2.5">
