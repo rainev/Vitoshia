@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { CONTACT } from "@/lib/contact";
 
 const contactDetails = [
-  { label: "Email", value: "hello@vitoshia.ph" },
-  { label: "Phone", value: "+63 9XX XXX XXXX" },
-  { label: "Location", value: "Philippines · Serving local & international clients" },
-  { label: "Hours", value: "Mon–Sat · 8:00 AM – 6:00 PM" },
+  { label: "Email", value: CONTACT.email },
+  { label: "Phone", value: CONTACT.phoneDisplay },
+  { label: "Location", value: CONTACT.addressFull },
+  { label: "Hours", value: CONTACT.hours },
 ];
 
 export default function ContactCta() {

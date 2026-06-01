@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { CONTACT } from "@/lib/contact";
 
 const footerNav = [
   { label: "Home", href: "/" },
@@ -60,9 +61,10 @@ export default function Footer() {
             Reach Us
           </p>
           <ul className="mt-4 flex flex-col gap-2.5 text-[13px] text-white/80 sm:text-[14px]">
-            <li>hello@vitoshia.ph</li>
-            <li>+63 9XX XXX XXXX</li>
-            <li>Mon–Sat · 8:00 AM – 6:00 PM</li>
+            <li>{CONTACT.email}</li>
+            <li>{CONTACT.phoneDisplay}</li>
+            <li>{CONTACT.addressFull}</li>
+            <li>{CONTACT.hours}</li>
           </ul>
         </div>
       </div>

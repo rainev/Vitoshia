@@ -26,9 +26,10 @@ export default function StorySection() {
             We make farming easier, more efficient, and more profitable.
           </p>
           <p className="mt-3 text-[14px] leading-[1.6] text-brand-muted sm:text-[16px] sm:leading-[1.65]">
-            Built on 20+ years through R. Benito Farming Services (RBFS), we pair proven
-            agricultural expertise with modern technology. Instead of juggling multiple
-            suppliers, you get one trusted partner from soil prep to harvest.
+            Founded in 2002 in Tuao, Cagayan as R. Benito Farming Services (RBFS) and rebranded
+            to Vitoshia PH in 2022, we pair two decades of proven agricultural expertise with
+            modern technology. Instead of juggling multiple suppliers, you get one trusted
+            partner from soil prep to harvest.
           </p>
 
           <ul className="mt-6 flex flex-wrap gap-2 sm:mt-7 sm:gap-2.5">

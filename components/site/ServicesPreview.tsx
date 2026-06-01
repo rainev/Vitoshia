@@ -2,11 +2,26 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
+const supportServices = [
+  {
+    name: "Consultation",
+    description: "Expert advice on equipment, crop handling, and scheduling.",
+  },
+  {
+    name: "Equipment & Labor Rental",
+    description: "Modern machinery and trained operators, without ownership costs.",
+  },
+  {
+    name: "Transport",
+    description: "Truck logistics for delivery to buyers, processors, or storage.",
+  },
+];
+
 const services = [
   {
     slug: "surveying",
     name: "Land Surveying",
-    description: "Accurate mapping for planning, titling, and layout.",
+    description: "Assessment and measurement of farmland for planning and efficient use.",
     image: "/images/photo-surveying.png",
   },
   {
@@ -18,7 +33,7 @@ const services = [
   {
     slug: "planning",
     name: "Crop Planning",
-    description: "Season planning around soil, water, and market timing.",
+    description: "Guidance on crop selection, scheduling, and farm management.",
     image: "/images/photo-02.png",
   },
   {
@@ -114,6 +129,24 @@ export default function ServicesPreview() {
             );
           })}
         </ul>
+
+        <div className="mt-14 border-t border-brand-green/15 pt-10 sm:mt-20 sm:pt-14 lg:mt-28 lg:pt-16">
+          <p className="mb-6 text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-orange sm:text-[12px] sm:tracking-[0.3em]">
+            Also Available
+          </p>
+          <ul className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8 lg:gap-10">
+            {supportServices.map((service) => (
+              <li key={service.name}>
+                <h4 className="font-serif text-[20px] font-bold leading-[1.2] text-brand-green-dark sm:text-[22px]">
+                  {service.name}
+                </h4>
+                <p className="mt-2 text-[14px] leading-[1.6] text-brand-muted sm:text-[15px]">
+                  {service.description}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <div className="mt-10 flex flex-wrap justify-center gap-2.5 sm:mt-12 sm:gap-3 lg:mt-20">
           <Button

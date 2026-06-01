@@ -1,14 +1,15 @@
-// PLACEHOLDER contact details — swap in real values before launch.
-// Phone format: keep international form for tel: links to work on mobile.
-// Viber: viber://chat?number=<intl-no-plus> deep-links into the Viber app on phones
-// and falls back gracefully to a "viber not installed" page elsewhere.
+// Source: Resources/Vitoshia (RBFS).pdf — verified company info.
+// Email is unverified; confirm before launch.
 
 export const CONTACT = {
-  phoneDisplay: "0917 XXX XXXX",
-  phoneIntl: "+639170000000",
-  viberNumber: "639170000000", // no leading + for viber:// scheme
-  messengerUrl: "https://m.me/vitoshiaph",
-  email: "hello@vitoshia.ph",
+  phoneDisplay: "+63 967 014 2800",
+  phoneIntl: "+639670142800",
+  viberNumber: "639670142800", // no leading + for viber:// scheme
+  messengerUrl: "https://m.me/vitoshiaph", // UNVERIFIED — confirm before launch
+  email: "hello@vitoshia.ph", // UNVERIFIED — confirm before launch
+  addressFull: "Purok 5, Mungo, Tuao, Cagayan",
+  addressShort: "Tuao, Cagayan",
+  hours: "Mon–Fri · 7:00 AM – 5:00 PM",
 } as const;
 
 export const telHref = `tel:${CONTACT.phoneIntl}`;
