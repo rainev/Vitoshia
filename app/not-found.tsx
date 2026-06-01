@@ -7,13 +7,13 @@ export default function NotFound() {
     <>
       <Header />
       <main className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-brand-green-dark px-5 py-24 text-center text-white sm:px-8 lg:px-16">
-        <p className="mb-3 text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:text-[13px] sm:tracking-[0.4em]">
+        <p className="mb-3 text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:text-[12px] sm:tracking-[0.3em]">
           404 · Page Not Found
         </p>
         <h1 className="font-serif font-bold leading-[1.1] text-[40px] sm:text-[64px] lg:text-[72px]">
           We can&apos;t find that field.
         </h1>
-        <p className="mt-4 max-w-[520px] text-[14px] leading-[1.55] text-[#e8efe5] sm:text-[17px]">
+        <p className="mt-4 max-w-[520px] text-[15px] leading-[1.55] text-[#e8efe5] sm:text-[17px]">
           The page you&apos;re looking for may have been moved or never existed. Let&apos;s get you
           back on the right path.
         </p>

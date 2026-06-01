@@ -4,44 +4,52 @@ import { Button } from "@/components/ui/button";
 
 const services = [
   {
+    slug: "surveying",
     name: "Land Surveying",
     description: "Accurate measurement and mapping for planning, titling, and pre-planting layout.",
-    image: "/images/photo-04.png",
+    image: "/images/photo-surveying.png",
   },
   {
+    slug: "preparation",
     name: "Land Preparation",
     description: "Plowing, harrowing, and bed-shaping with our fleet of tractors and implements.",
-    image: "/images/photo-10.png",
+    image: "/images/photo-09.png",
   },
   {
+    slug: "planning",
     name: "Crop Planning",
     description: "Season-by-season planning aligned with soil type, water access, and market timing.",
     image: "/images/photo-05.png",
   },
   {
+    slug: "drone",
     name: "Drone Spraying",
     description: "Precision fertilizer & pesticide application — faster coverage, less waste, safer for workers.",
-    image: "/images/photo-08.png",
-  },
-  {
-    name: "Solar Water Systems",
-    description: "Off-grid irrigation powered by the sun — lower diesel costs, reliable water year-round.",
-    image: "/images/photo-09.png",
-  },
-  {
-    name: "Harvesting",
-    description: "Combine harvester services for rice and corn with trained operators and field support.",
-    image: "/images/photo-02.png",
-  },
-  {
-    name: "Hauling",
-    description: "Truck logistics from field to warehouse or buyer — coordinated with your harvest schedule.",
     image: "/images/photo-06.png",
   },
   {
+    slug: "solar-water",
+    name: "Solar Water Systems",
+    description: "Off-grid irrigation powered by the sun — lower diesel costs, reliable water year-round.",
+    image: "/images/photo-solar-water.png",
+  },
+  {
+    slug: "harvesting",
+    name: "Harvesting",
+    description: "Combine harvester services for rice and corn with trained operators and field support.",
+    image: "/images/photo-10.png",
+  },
+  {
+    slug: "hauling",
+    name: "Hauling",
+    description: "Truck logistics from field to warehouse or buyer — coordinated with your harvest schedule.",
+    image: "/images/photo-02.png",
+  },
+  {
+    slug: "drying",
     name: "Drying",
     description: "Post-harvest drying to keep grain quality high and ready for market or storage.",
-    image: "/images/photo-01.png",
+    image: "/images/photo-drying.png",
   },
 ];
 
@@ -65,8 +73,9 @@ export default function ServicesPreview() {
         <ul className="mt-10 grid grid-cols-1 gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
           {services.map((service) => (
             <li
-              key={service.name}
-              className="group overflow-hidden rounded-xl border border-[#eee] bg-white transition-shadow hover:shadow-md"
+              key={service.slug}
+              id={`service-${service.slug}`}
+              className="group scroll-mt-8 overflow-hidden rounded-xl border border-[#eee] bg-white transition-shadow hover:shadow-md sm:scroll-mt-12"
             >
               <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image

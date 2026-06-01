@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-[10px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:text-[11px]">
+          <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:text-[12px] sm:tracking-[0.3em]">
             Explore
           </p>
           <ul className="mt-4 flex flex-col gap-2.5">
@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="text-[10px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:text-[11px]">
+          <p className="text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:text-[12px] sm:tracking-[0.3em]">
             Reach Us
           </p>
           <ul className="mt-4 flex flex-col gap-2.5 text-[13px] text-white/80 sm:text-[14px]">

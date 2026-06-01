@@ -23,7 +23,7 @@ export default function Hero() {
 
       <div className="w-full max-w-[820px] px-5 pt-24 pb-8 sm:px-8 sm:pt-32 sm:pb-14 lg:px-16">
         <p className="mb-2.5 text-[12px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:mb-3 sm:text-[13px] sm:tracking-[0.4em] lg:text-[14px]">
-          IT &amp; Agri Solutions · Philippines
+          Tech-Driven Agri Solutions · Philippines
         </p>
         <h1 className="font-serif font-bold leading-[1.1] text-[34px] sm:text-[48px] sm:leading-[1.05] md:text-[56px] lg:text-[60px]">
           Modern farming services, from soil prep to harvest.

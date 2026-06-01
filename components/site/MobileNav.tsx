@@ -29,10 +29,10 @@ export default function MobileNav({ links }: { links: NavLink[] }) {
 
       <SheetContent
         side="right"
-        className="w-[280px] border-l-0 bg-brand-green-dark p-0 text-white sm:w-[320px]"
+        className="w-[280px] border-l-0 bg-brand-green p-0 text-white sm:w-[320px]"
       >
         <SheetHeader className="border-b border-white/10 px-6 py-5">
-          <SheetTitle className="text-sm font-bold tracking-[0.04em] text-white">
+          <SheetTitle className="font-sans text-sm font-bold tracking-[0.04em] text-white">
             VITOSHIA PH
           </SheetTitle>
         </SheetHeader>
@@ -44,7 +44,7 @@ export default function MobileNav({ links }: { links: NavLink[] }) {
                 <SheetClose asChild>
                   <Link
                     href={link.href}
-                    className="block rounded-md px-2 py-3 text-[15px] font-medium tracking-[0.15em] uppercase text-white/85 transition-colors hover:bg-white/10 hover:text-brand-yellow"
+                    className="block rounded-md px-2 py-3 text-[15px] font-medium tracking-[0.18em] uppercase text-white/85 transition-colors hover:bg-white/10 hover:text-brand-yellow"
                   >
                     {link.label}
                   </Link>

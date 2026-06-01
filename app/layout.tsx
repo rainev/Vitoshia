@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Vitoshia PH — IT & Agri Solutions",
+  title: "Vitoshia PH — Tech-Driven Agri Solutions",
   description:
     "Modern farming services in the Philippines: land surveying, drone fertilizer & pesticide application, solar water systems, harvesting, hauling, and drying.",
 };

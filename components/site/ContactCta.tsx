@@ -13,7 +13,7 @@ export default function ContactCta() {
     <section className="w-full bg-brand-green-dark py-14 text-white sm:py-20 lg:py-24">
       <div className="grid w-full grid-cols-1 gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-16">
         <div>
-          <p className="mb-3 text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:text-[13px] sm:tracking-[0.4em]">
+          <p className="mb-3 text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:text-[12px] sm:tracking-[0.3em]">
             Get in Touch
           </p>
           <h2 className="font-serif font-bold leading-[1.1] text-[28px] sm:text-[40px] lg:text-[46px]">
