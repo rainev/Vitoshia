@@ -32,8 +32,11 @@ export default function Hero() {
         <p className="mt-3 max-w-[600px] text-[15px] leading-[1.55] text-[#e8efe5] sm:mt-5 sm:text-[17px] sm:leading-[1.55]">
           Modern equipment, trained operators, and end-to-end farming support you can rely on.
         </p>
+        <p className="mt-4 font-serif text-[15px] italic text-brand-yellow sm:mt-5 sm:text-[17px]">
+          Galing sa lupa, para sa magsasaka.
+        </p>
 
-        <div className="mt-4 flex flex-wrap gap-2.5 sm:mt-6 sm:gap-3">
+        <div className="mt-5 flex flex-wrap gap-2.5 sm:mt-7 sm:gap-3">
           <Button
             asChild
             className="h-10 rounded-md bg-brand-orange px-5 text-[12px] font-bold tracking-[0.13em] uppercase text-white hover:bg-brand-orange-deep sm:h-12 sm:px-6 sm:text-sm"
