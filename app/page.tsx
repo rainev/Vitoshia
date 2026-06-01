@@ -14,8 +14,10 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <StorySection />
-      <FarmCycle />
-      <ServicesPreview />
+      <div className="relative">
+        <FarmCycle />
+        <ServicesPreview />
+      </div>
       <ContactCta />
       <Footer />
     </>

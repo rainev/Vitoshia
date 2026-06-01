@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-[#011a0a] text-white/85">
-      <div className="grid w-full grid-cols-1 gap-10 px-5 py-12 sm:grid-cols-2 sm:gap-12 sm:px-8 sm:py-14 lg:grid-cols-4 lg:px-16">
+      <div className="mx-auto grid w-full max-w-[1500px] grid-cols-1 gap-10 px-5 py-12 sm:grid-cols-2 sm:gap-12 sm:px-8 sm:py-14 lg:grid-cols-4 lg:px-16">
         <div className="sm:col-span-2 lg:col-span-2">
           <Link href="/" className="inline-flex items-center gap-2.5 sm:gap-3">
             <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1 sm:h-10 sm:w-10">
@@ -67,10 +67,12 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 px-5 py-5 sm:px-8 lg:px-16">
-        <p className="text-[11px] tracking-[0.08em] text-white/55 sm:text-[12px]">
-          © {year} Vitoshia PH. All rights reserved.
-        </p>
+      <div className="border-t border-white/10">
+        <div className="mx-auto w-full max-w-[1500px] px-5 py-5 sm:px-8 lg:px-16">
+          <p className="text-[11px] tracking-[0.08em] text-white/55 sm:text-[12px]">
+            © {year} Vitoshia PH. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );

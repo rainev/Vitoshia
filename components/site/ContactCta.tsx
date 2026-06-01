@@ -11,7 +11,7 @@ const contactDetails = [
 export default function ContactCta() {
   return (
     <section className="w-full bg-brand-green-dark py-14 text-white sm:py-20 lg:py-24">
-      <div className="grid w-full grid-cols-1 gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-16">
+      <div className="mx-auto grid w-full max-w-[1500px] grid-cols-1 gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-16">
         <div>
           <p className="mb-3 text-[11px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:text-[12px] sm:tracking-[0.3em]">
             Get in Touch

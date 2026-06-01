@@ -14,7 +14,7 @@ const navLinks = [
 export default function Header() {
   return (
     <header className="absolute inset-x-0 top-0 z-20">
-      <div className="flex w-full items-center justify-between gap-3 px-5 pt-6 pb-3.5 text-white sm:gap-6 sm:px-8 sm:pt-8 sm:pb-4 lg:px-16">
+      <div className="mx-auto flex w-full max-w-[1500px] items-center justify-between gap-3 px-5 pt-6 pb-3.5 text-white sm:gap-6 sm:px-8 sm:pt-8 sm:pb-4 lg:px-16">
         <Link href="/" className="flex items-center gap-2.5 sm:gap-3">
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-white p-1 sm:h-10 sm:w-10">
             <Image

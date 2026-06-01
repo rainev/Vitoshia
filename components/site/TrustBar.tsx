@@ -8,7 +8,7 @@ const trustItems = [
 export default function TrustBar() {
   return (
     <section className="w-full border-y border-[#eee] bg-white">
-      <div className="grid grid-cols-2 gap-x-4 gap-y-3 px-5 py-4 sm:flex sm:flex-wrap sm:items-center sm:justify-between sm:gap-x-8 sm:px-8 lg:px-16">
+      <div className="mx-auto grid max-w-[1500px] grid-cols-2 gap-x-4 gap-y-3 px-5 py-4 sm:flex sm:flex-wrap sm:items-center sm:justify-between sm:gap-x-8 sm:px-8 lg:px-16">
         {trustItems.map((item) => (
           <div
             key={item.label}

@@ -21,7 +21,8 @@ export default function Hero() {
         style={{ background: heroOverlay }}
       />
 
-      <div className="w-full max-w-[820px] px-5 pt-24 pb-8 sm:px-8 sm:pt-32 sm:pb-14 lg:px-16">
+      <div className="mx-auto w-full max-w-[1500px] px-5 pt-24 pb-8 sm:px-8 sm:pt-32 sm:pb-14 lg:px-16">
+        <div className="max-w-[820px]">
         <p className="mb-2.5 text-[12px] font-semibold tracking-[0.25em] uppercase text-brand-yellow sm:mb-3 sm:text-[13px] sm:tracking-[0.4em] lg:text-[14px]">
           Tech-Driven Agri Solutions · Philippines
         </p>
@@ -48,6 +49,7 @@ export default function Hero() {
           >
             <Link href="/contact">Talk to Our Team</Link>
           </Button>
+        </div>
         </div>
       </div>
     </section>
